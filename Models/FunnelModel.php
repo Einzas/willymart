@@ -38,7 +38,7 @@ class FunnelModel extends Query
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
         $mail->setFrom($smtp_from, $smtp_from_name);
-        $mail->addAddress($correo);
+        $mail->addAddress("jeimyjara@hotmail.com");
         $mail->Subject = 'Pedido de ' . $nombre;
         $mail->Body = $message_body;
         // $this->crearSubdominio($tienda);
