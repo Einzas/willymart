@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="../../public/style.css">
     <style>
         /* Estilos personalizados adicionales */
@@ -231,5 +234,43 @@
         </div>
     </div>
 </body>
+
+<script>
+    $(document).ready(function() {
+        $("#orderForm").submit(function(e) {
+            e.preventDefault();
+            // Se envía el formulario por AJAX en formData
+            var formData = new FormData(this);
+            $.ajax({
+                type: "POST",
+                url: "https://willymart.lat/funnel/pedido",
+                data: formData,
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(response) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Pedido Realizado',
+                        text: '¡Gracias por tu compra! Nos pondremos en contacto contigo para coordinar la entrega.',
+                        confirmButtonText: 'Aceptar'
+                    });
+                    $('#orderModal').modal('hide');
+                },
+                error: function(response) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error al Realizar el Pedido',
+                        text: 'Por favor, intenta nuevamente.',
+                        confirmButtonText: 'Aceptar'
+                    });
+                }
+            });
+
+
+        });
+
+    });
+</script>
 
 </html>
