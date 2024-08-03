@@ -58,7 +58,7 @@
                 <p class="text-white">¡Sonríe con Confianza! Descubre Nuestro Blanqueador Dental de Última Generación y
                     fórmula Americana
                     V34.</p>
-                <a href="#compra" class="btn btn-light btn-lg mt-3">¡Compra Ahora!</a>
+                <button data-bs-toggle="modal" data-bs-target="#orderModal" class="btn btn-light btn-lg mt-3">¡Compra Ahora!</button>
             </div>
         </div>
     </header>
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#compra" class="btn btn-primary btn-lg">¡Compra Ahora!</a>
+                <button data-bs-toggle="modal" data-bs-target="#orderModal" class="btn btn-primary btn-lg">¡Compra Ahora!</button>
             </div>
         </div>
     </section>
