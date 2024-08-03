@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3 {
+    color: #4a4a4a;
+}
+
+p {
+    color: #666;
+    margin: 0 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#benefits .benefit-item {
+    margin: 20px 0;
+}
+
+#compra .pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.price-box h3 {
+    margin-bottom: 10px;
+}
+
+.price-box p.price {
+    font-size: 1.5em;
+    color: #e100ff;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #e100ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #cc00cc;
+}
+
+
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+.submit-button {
+    background-color: #e100ff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #cc00cc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+
+
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.pricing .price-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
