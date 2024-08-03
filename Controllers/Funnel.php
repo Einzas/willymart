@@ -28,8 +28,7 @@ class Funnel extends Controller
         $telefono = $_POST['phone'];
         $ciudad = $_POST['city'];
         $direccion = $_POST['address'];
-        $producto1 = $_POST['product1'];
-        $producto2 = $_POST['product2'];
+        $producto1 = $_POST['product'];
         $provincia = $_POST['province'];
         $referencia = $_POST['reference'];
 
@@ -39,7 +38,6 @@ class Funnel extends Controller
             'ciudad' => $ciudad,
             'direccion' => $direccion,
             'producto1' => $producto1,
-            'producto2' => $producto2,
             'provincia' => $provincia,
             'referencia' => $referencia
         ];

@@ -154,7 +154,7 @@ $message_body = '<!DOCTYPE html>
                 <strong>Ciudad: </strong> ' . $ciudad . '
                 <strong>Dirección: </strong> ' . $direccion . '
                 <strong>Referencia: </strong> ' . $referencia . '
-                <strong>Productos : </strong> ' . $producto1 . ' ' . $producto2 . '
+                <strong>Productos : </strong> ' . $producto1 . '
             </article>
         </section>
     </div>

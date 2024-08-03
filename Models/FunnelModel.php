@@ -21,7 +21,6 @@ class FunnelModel extends Query
         $ciudad = $data['ciudad'];
         $direccion = $data['direccion'];
         $producto1 = $data['producto1'];
-        $producto2 = $data['producto2'];
         $provincia = $data['provincia'];
         $referencia = $data['referencia'];
 
